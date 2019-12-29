@@ -1,8 +1,19 @@
 server:
-  port: 8081
+  port: 10001
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/DSblog
+    url: jdbc:mysql://121.36.41.153:3306/DSblog
     username: root
     password: root
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 5000
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

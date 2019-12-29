@@ -11,6 +11,8 @@ public class CodeMsg {
     public static CodeMsg SUCCESS = new CodeMsg(200200, "success");
     public static CodeMsg FAILED =  new CodeMsg(500500, "failed");
 
+    public static CodeMsg BLOG_EMPTY =  new CodeMsg(40000, "当前分类下暂时没有文章哦~");
+
 
 
     private CodeMsg(int code, String msg) {
